@@ -44,13 +44,3 @@ const Logoimg = styled.img`
   width: 100px;
   height: 100px;
 `;
-
-const Profile = styled.div`
-  margin: auto;
-  margin-right: 5px;
-`;
-const Profileimg = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-`;
