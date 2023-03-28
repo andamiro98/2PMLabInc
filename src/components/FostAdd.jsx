@@ -1,18 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BsCameraVideoFill, BsPersonVideo, BsEmojiSmile } from 'react-icons/bs';
+import Profile from './Profile';
 
 const FostAdd = () => {
   return (
     <AddBox>
       <ClickBox>
-        <ProfileBox>
-          <Profile src="https://w7.pngwing.com/pngs/841/727/png-transparent-computer-icons-user-profile-synonyms-and-antonyms-android-android-computer-wallpaper-monochrome-sphere.png" />
-        </ProfileBox>
+        <Profile />
         <ClickBoxText>김승재님, 무슨 생각을 하고 계신가요?</ClickBoxText>
       </ClickBox>
       <ClickBoxObjects>
-        <ClickBoxObject>
+        <ClickBoxObject
+          onClick={() => {
+            alert('라이브 방송');
+          }}
+        >
           <BsCameraVideoFill
             style={{
               fontSize: '25px',
@@ -23,7 +26,11 @@ const FostAdd = () => {
           />
           라이브 방송
         </ClickBoxObject>
-        <ClickBoxObject>
+        <ClickBoxObject
+          onClick={() => {
+            alert('사진/동영상');
+          }}
+        >
           <BsPersonVideo
             style={{
               fontSize: '25px',
@@ -34,7 +41,11 @@ const FostAdd = () => {
           />
           사진/동영상
         </ClickBoxObject>
-        <ClickBoxObject>
+        <ClickBoxObject
+          onClick={() => {
+            alert('기분/활동');
+          }}
+        >
           <BsEmojiSmile
             style={{
               fontSize: '25px',
@@ -54,7 +65,7 @@ export default FostAdd;
 
 const AddBox = styled.div`
   max-width: 100%;
-  width: 800px;
+  width: 700px;
   height: 100px;
   margin: auto;
   margin-top: 15px;
@@ -65,19 +76,6 @@ const AddBox = styled.div`
   flex-direction: column;
 `;
 
-const ProfileBox = styled.div`
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  display: flex;
-`;
-
-const Profile = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-`;
-
 const ClickBox = styled.div`
   width: 800px;
   height: 50px;
@@ -85,7 +83,7 @@ const ClickBox = styled.div`
 `;
 
 const ClickBoxText = styled.div`
-  width: 700px;
+  width: 600px;
   height: 30px;
   border-radius: 25px;
   display: flex;
@@ -108,4 +106,5 @@ const ClickBoxObjects = styled.div`
 const ClickBoxObject = styled.div`
   display: flex;
   margin: auto;
+  cursor: pointer;
 `;

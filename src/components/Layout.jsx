@@ -9,6 +9,7 @@ export default Layout;
 
 const Frame = styled.div`
   max-width: 100%;
+  height: 100%;
   padding: 15px;
   margin: auto;
   align-items: center;
