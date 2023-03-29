@@ -3,11 +3,9 @@ import styled from 'styled-components';
 
 const Profile = () => {
   return (
-    <>
-      <ProfileBox>
-        <Profileimg src="https://w7.pngwing.com/pngs/841/727/png-transparent-computer-icons-user-profile-synonyms-and-antonyms-android-android-computer-wallpaper-monochrome-sphere.png" />
-      </ProfileBox>
-    </>
+    <ProfileBox>
+      <Profileimg src="https://w7.pngwing.com/pngs/841/727/png-transparent-computer-icons-user-profile-synonyms-and-antonyms-android-android-computer-wallpaper-monochrome-sphere.png" />
+    </ProfileBox>
   );
 };
 
